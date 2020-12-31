@@ -5,11 +5,16 @@ package SecretBox;
  */
 public class SecretBox {
     private String boxNum;
-    private String timeFlag;
     private String hashValue;
     private String lastHashValue;
-    private String SecretNum;
+    private int SecretNum;
 
+
+    public SecretBox(SecretBox secretBox){
+        this.boxNum = secretBox.getBoxNum()+1;
+        this.lastHashValue = secretBox.getHashValue();
+
+    }
     public String getBoxNum() {
         return boxNum;
     }
@@ -34,20 +39,19 @@ public class SecretBox {
         this.lastHashValue = lastHashValue;
     }
 
-    public String getSecretNum() {
+    public int getSecretNum() {
         return SecretNum;
     }
 
-    public void setSecretNum(String secretNum) {
+    public void setSecretNum(int secretNum) {
         SecretNum = secretNum;
     }
 
-    public String getTimeFlag() {
-        return timeFlag;
-    }
 
-    public void setTimeFlag(String timeFlag) {
-        this.timeFlag = timeFlag;
+    public int openBox(SecretBox secretBox){
+        int resultSecretNum = 0;
+
+        return resultSecretNum;
     }
 
 }
