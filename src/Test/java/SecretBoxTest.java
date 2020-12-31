@@ -24,6 +24,6 @@ public class SecretBoxTest {
             secretBox.openBox(secretBoxList.get(boxNum-1));
         }
         //then
-        assertEquals(ConstsUtil.BOX_COUNT,secretBoxList.size()-1);
+        assertEquals(ConstsUtil.OPENED_BOX_FLAG,secretBoxList.get(1).getHashValue().substring(0,5));
     }
 }
