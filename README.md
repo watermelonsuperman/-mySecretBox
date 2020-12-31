@@ -5,7 +5,7 @@
         再运行SecretBoxTest.java，测试第一个箱子HashValue的前五位是否为0，这一步可能需要点时间
 3.代码结构解释：
     开发：
-        ConstsUtil:常亮类，避免魔法值
+        ConstsUtil:常量类，避免魔法值
         SecretBox:神秘箱子实体类，包含四个箱子的属性，和打开箱子的方法
         SHA256Code:SHA256算法
     测试：
